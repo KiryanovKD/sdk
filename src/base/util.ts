@@ -136,7 +136,7 @@ export async function buildTransaction({
 
   const lta = [
     ...new Set<string>([
-      '2immgwYNHBbyVQKVGCEkgWpi53bLwWNRMB5G2nbgYV17',
+      'Cg21j6b5vAQ9xph1CJZdofhdFRoRAqXhP7K6rcx1tbnN',
       ...innerTransactions
         .map((i) => i.lookupTableAddress ?? [])
         .flat()
@@ -158,7 +158,7 @@ export async function buildTransaction({
   const txList: (VersionedTransaction | Transaction)[] = []
   for (const itemIx of innerTransactions) {
     const _itemLTA: CacheLTA = {
-      '2immgwYNHBbyVQKVGCEkgWpi53bLwWNRMB5G2nbgYV17': _lookupTableCache['2immgwYNHBbyVQKVGCEkgWpi53bLwWNRMB5G2nbgYV17'],
+      'Cg21j6b5vAQ9xph1CJZdofhdFRoRAqXhP7K6rcx1tbnN': _lookupTableCache['Cg21j6b5vAQ9xph1CJZdofhdFRoRAqXhP7K6rcx1tbnN'],
     }
     if (makeTxVersion === TxVersion.V0) {
       for (const item of itemIx.lookupTableAddress ?? []) {
