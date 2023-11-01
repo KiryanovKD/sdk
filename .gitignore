@@ -46,7 +46,6 @@ jspm_packages/
 web_modules/
 
 # TypeScript cache
-*.tsbuildinfo
 
 # Optional npm cache directory
 .npm
@@ -119,7 +118,6 @@ dist
 
 # misc
 .DS_Store
-lib/
 .coverage/
 docs/
 .idea

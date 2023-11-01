@@ -15,7 +15,7 @@
     "import": "./lib/esm/index.js",
     "types": "./lib/types/index.d.ts"
   },
-  "repository": "https://github.com/raydium-io/raydium-sdk",
+  "repository": "https://github.com/DenisTok/raydium-sdk",
   "keywords": [
     "raydium",
     "solana"
