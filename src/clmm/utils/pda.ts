@@ -30,6 +30,7 @@ export function getPdaPoolRewardVaulId(programId: PublicKey, poolId: PublicKey, 
 }
 
 export function getPdaTickArrayAddress(programId: PublicKey, poolId: PublicKey, startIndex: number) {
+  console.log("getPdaTickArrayAddress: programId: ", programId.toString(), "poolId: ", poolId.toString(), "startIndex: ", startIndex)
   return findProgramAddress([TICK_ARRAY_SEED, poolId.toBuffer(), i32ToBytes(startIndex)], programId)
 }
 
