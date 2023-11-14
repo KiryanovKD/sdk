@@ -4098,6 +4098,8 @@ export class Clmm extends Base {
 
       const layoutAccountInfo = PoolInfoLayout.decode(accountInfo.data)
 
+      console.log("layoutAccountInfo: ", layoutAccountInfo)
+
       poolsInfo[apiPoolInfo.id] = {
         state: {
           id: new PublicKey(apiPoolInfo.id),
